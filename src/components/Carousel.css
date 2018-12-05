@@ -1,0 +1,133 @@
+.Carousel {
+	height: 500px;
+}
+
+.CarouselCard {
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-inner{
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%; 
+    flex-wrap: wrap;
+    z-index: 99;
+    position: fixed;
+    padding: 50px 150px 50px 150px;
+
+}
+
+.carousel-image {
+	margin: 0 2% 0 2%;
+	width: 25%;
+	min-width: 200px;
+}
+
+.carousel-image img {
+	width: 100%;
+}
+
+.carousel-gradient {
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+	height: 60%;
+	background: linear-gradient(to top, rgba(32, 44, 50, 1), rgba(0, 0, 0, 0));
+	z-index: 999;
+}
+
+.carousel-text {
+	width: 60%;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 0 2% 0 2%;
+}
+
+.carousel-text p {
+	padding: 15px 0 15px 0;
+	font-size: 16px;
+	opacity: 0.6;
+	min-width: 200px;
+}
+
+.carousel-buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.carousel-buttons button{
+	font-size: 16px;
+	font-weight: bold;
+	height: 50px;
+	width: 140px;
+	border-radius: 5px;
+}
+
+.buyButton {
+	background-color: #319DE5;
+	border-style: none;
+	margin: 5px 10px 5px 0;
+}
+
+.buyButton .glyphicon {
+	transform: scale(1.5, 1.5);
+	padding: 0 8px 0 0;
+}
+
+.watchButton {
+	background-color: transparent;
+	border-color: white;
+	margin: 5px 5px 5px 0;
+}
+
+.carousel-control {
+	width: 15%;
+	text-shadow: none;
+	background-image: none;
+}
+
+.carousel-control .glyphicon {
+	top: 40%;
+	transform: scale(1.75, 2);
+}
+
+.carousel-control .glyphicon-menu-left, .carousel-control .icon-prev {
+	left: 30%;
+}
+
+.carousel-control .glyphicon-menu-right, .carousel-control .icon-prev {
+	right: 30%;
+}
+
+.background {
+	filter: blur(20px) brightness(50%);
+	z-index: 1;
+	transform: scale(4, 4);
+}
+
+
+@media screen and (max-width:992px) {
+    .carousel-text p { 
+    	display: none;
+    }
+    .carousel-gradient {
+    	display: none;
+    }
+    .Carousel {
+    	height: 550px;
+    }
+}
+
+
